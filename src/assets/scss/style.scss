@@ -1,0 +1,260 @@
+
+body{
+  font-family: 'Estedad' !important;
+  background-color: #F8F7FB;
+  color:#5E5E5E
+}
+a{
+  color:white ;
+  text-decoration: none !important;
+}
+a ,button *{
+  cursor: pointer;
+}
+.row{
+  margin: 0;
+}
+
+.text-active{
+  color: #6D65EC;
+}
+.bg-blue-active{
+  background-color: #6D65EC;
+}
+.text-default-header-menu{
+  color:#A7A7BE;
+}
+.justify-content-start{
+  transition: justify-content 2s linear;
+  -webkit-transition: justify-content 2s linear;
+  -o-transition: justify-content 2s linear;
+  -moz-transition: justify-content 2s linear;
+}
+.justify-content-end{
+  transition: justify-content 2s linear;
+  -webkit-transition: justify-content 2s linear;
+  -o-transition: justify-content 2s linear;
+  -moz-transition: justify-content 2s linear;
+}
+
+.input-group {
+  flex-direction: row-reverse;
+  border-radius: .5rem;
+  border:1px solid ;
+  color:#404040;
+  &.input-border-error{
+    border-color:RGBA(204,38,38,0.68)
+  }
+  &.input-border-green{
+    border-color:RGBA(38,204,131,0.68)
+  }
+  &.input-border-default {
+    border-color:RGBA(206,199,199,0.68);
+  }
+  .input-group-append{
+    margin-right: 0;
+  }
+  input {
+    border:none;
+    text-align: right;
+    background: none;
+    font-family: 'EstedadLight' !important;
+    font-size: 13px;
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+
+  }
+  .input-group-text{
+    background:none;
+    border:none;
+    padding-left:0 ;
+    padding-right: 1.3rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+    img{
+      //width: 17px;
+    }
+    svg{
+      width: 17px;
+    }
+  }
+}
+
+
+.input-feedback{
+  display: flex;
+  align-items: center;
+  font-family: 'EstedadLight' !important;
+  font-size: 12px;
+  color:#CC2626;
+  line-height: 1;
+  height: 1.5rem;
+  .error-dot{
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #CC2626;
+  }
+}
+
+.input-group > .form-control:not(:last-child), .input-group > .custom-select:not(:last-child) {
+  border-top-left-radius: .5rem;
+  border-bottom-left-radius: .5rem;
+}
+.menu-bar{
+  cursor: pointer;
+}
+
+.form-control {
+  color:#404040;
+  &:focus {
+    box-shadow: none;
+    background-color: #F8F7FB;
+  }
+}
+.cursor-pointer{
+  cursor: pointer;
+}
+.mobile-version{
+  display: none;
+  width: 100%;
+  .mobile-version-logo-box{
+    position: absolute;
+    top:0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    z-index: 1000;
+    box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.05);
+    -webkit-box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.05);
+    -moz-box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.05);
+  }
+  .section-mobile{
+    width: 230px;
+    margin: auto;
+  }
+}
+
+button{
+    color:white;
+    &:active{
+      box-shadow: none;
+    }
+    &:focus{
+      box-shadow: none !important;
+    }
+}
+.success-color{
+  color:#2DD38D
+}
+.danger-color{
+  color:#C9485B
+}
+.primary-color{
+  color:#6D65EC
+}
+.success-background{
+  background-color: #2DD38D;
+}
+.danger-background{
+  background-color:#C9485B
+}
+.primary-background{
+  background-color:#6D65EC
+}
+
+
+
+//USING
+.height75vh{
+  height: 75vh;
+}
+.w-50px{
+  width: 100px;
+}
+.mr-20{
+  margin-right: 20px;
+}
+.mt-2rem{
+  margin-top: 2rem !important;
+}
+.mt-25{
+  margin-top: 2.5rem !important;
+}
+.mb-2rem{
+  margin-bottom: 2rem !important;
+}
+.mb-25{
+  margin-bottom: 2.5rem !important;
+}
+.pt-6{
+  padding-top: 6rem;
+}
+.opacity-40{
+  opacity: 40%;
+}
+.opacity-1{
+  opacity: 1;
+}
+.w-400{
+  width: 400px;
+}
+.back-white{
+  background-color: white;
+}
+.fg-white{
+  color: white;
+}
+.w-100px{
+  width: 100px;
+}
+.w-110px{
+  width: 110px;
+}
+.w-76{
+  width: 76%;
+}
+.border-active{
+  border-color:#6D65EC
+}
+.p-0{
+  padding: 0;
+}
+.py-35px{
+  padding: 35px 0;
+}
+.w-50{
+  width: 50%;
+}
+.alert-box{
+  color:#CC2626;
+  font-size: 12px;
+  background-color: #F8F7FB;
+  border-color: #F8F7FB;
+}
+.warning-error-dot{
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #CC2626;
+}
+
+/*MEDIA QUERY Global*/
+@media only screen and (max-width: 768px) {
+  .start-container,.list-lead,.list-lead-detail,.landing-lab{
+    display: none;
+  }
+    .mobile-version{
+      display: block;
+    }
+
+}

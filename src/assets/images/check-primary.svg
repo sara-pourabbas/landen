@@ -1,0 +1,7 @@
+<svg id="check" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <g id="Group_62" data-name="Group 62">
+    <circle id="Ellipse_247" data-name="DragAndClose 247" cx="13.845" cy="13.845" r="13.845" transform="translate(1.155 1.155)" fill="#4A09F4"/>
+    <path id="Path_150" data-name="Path 150" d="M15,30A15,15,0,1,1,30,15,15.017,15.017,0,0,1,15,30ZM15,2.324A12.676,12.676,0,1,0,27.676,15,12.69,12.69,0,0,0,15,2.324Z" fill="#4A09F4"/>
+  </g>
+  <path id="Path_151" data-name="Path 151" d="M137.483,172.8a1.153,1.153,0,0,1-.823-.345l-4.262-4.331a1.155,1.155,0,0,1,1.647-1.619l3.4,3.46,7.044-7.757a1.155,1.155,0,1,1,1.709,1.553l-7.865,8.662a1.155,1.155,0,0,1-.832.379Z" transform="translate(-124.285 -152.31)" fill="#fff"/>
+</svg>
