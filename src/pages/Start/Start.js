@@ -383,93 +383,12 @@ export default class Start extends React.Component {
 
     render(){
 
-        const {typeArray,topicArray,contentArray,illustrationArray,colorArray,fontArray} = this.state;
+        const {contentArray,illustrationArray,colorArray,fontArray} = this.state;
         return(
             <Container fluid={true} className='p-0 start'>
                 <MobileVersion />
                 <Row className='start-container'>
                     <Col className='p-0'>
-                        <div className='section align-items-center'>
-                            <h2 className='section-title'>
-                                لندینگ پیج خودت رو بساز
-                            </h2>
-                            <div className='section-sub-title mt-3'>
-                                برای ساخت لندینگ پیج به سوالات زیر پاسخ دهید
-                            </div>
-                            <div className='text-center'>
-                                <Button className='start-button' onClick={()=>{
-                                    this.handleOnClick( this.stepTwo)
-
-                                }}>  شروع کنید  </Button>
-                            </div>
-                            <ArrowButton disabled={false} />
-                        </div>
-
-                        <div className='section stepTwo pt-6 align-items-center' ref={this.stepTwo}>
-                            <h2 className='section-title'>
-                                نوع صفحه فرود را انتخاب کنید
-                            </h2>
-                            <div className='section-sub-title mt-3'>
-                                صفحه فرود شما در کدام دسته بندی زیر است ؟
-                            </div>
-                            <Row className='mt-4 select-row'>
-                                {
-                                    typeArray.map((el,i)=>{
-                                        return(<>
-                                            <ItemWithIcon key={i+1}
-                                                          selectType={this.state.selectType===i+1}
-                                                          onClick={()=>{this.handleSelect('selectType',i+1);
-                                                                         this.handleSelect('disableBtnType',false)}}
-                                                          alt={el.title}
-                                                          pic={this.state.selectType===i+1 ? el.img+'-click':el.img}
-                                                          title={el.title}
-                                            />
-                                        </>
-                                        )
-                                    })
-                                }
-                            </Row>
-                            <div className='text-center '>
-                                <NextStepButton disabled={this.state.disableBtnType}
-                                                onClick={()=>{this.handleOnClick(this.stepThree);
-                                                    this.handleActiveMenuHeader(1)}} />
-                            </div>
-                            <ArrowButton disabled={this.state.disableBtnType} />
-                        </div>
-
-                        {/*{this.state.disableBtnType === false &&*/}
-                        <div className='section stepThree pt-6 align-items-center' ref={this.stepThree}>
-                            <div className='section-title'>
-                                موضوع فعالیت شما در کدام دسته بندی زیر است ؟
-                            </div>
-                            <div className='section-sub-title mt-3'>
-                                صفحه فرود شما در کدام دسته بندی زیر است ؟
-                            </div>
-                            <Row className='mt-4 select-row'>
-                                {
-                                    topicArray.map((el,i)=>{
-                                        return(
-                                            <ItemWithIcon key={i+1}
-                                                          selectType={this.state.selectTopic===i+1}
-                                                          onClick={()=>{this.handleSelect('selectTopic',i+1);
-                                                              this.handleSelect('disableBtnTopic',false)}}
-                                                          alt={el.title}
-                                                          pic={this.state.selectTopic===i+1 ? el.img+'-click':el.img}
-                                                          title={el.title}
-                                            />
-                                        )
-                                    })
-                                }
-                            </Row>
-                            <div className='text-center '>
-                                <NextStepButton disabled={this.state.disableBtnTopic}
-                                                onClick={()=>{this.handleOnClick(this.stepFour);
-                                                    this.handleActiveMenuHeader(2)}} />
-                            </div>
-                            <ArrowButton disabled={this.state.disableBtnTopic } />
-                        </div>
-                      {/*}*/}
-
 
            <Container className={'px-0 pt-6 mt-5'}>
                <Row>
