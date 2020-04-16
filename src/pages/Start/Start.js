@@ -588,10 +588,7 @@ export default class Start extends React.Component {
                            <ScrollUp />
                        </div>
 
-                       {
-                           this.state.sections.sort(a=>a.order).map((el,i) =>{
-                               return(
-                                   <div>
+
                                        {
                                            this.state.addSection.includes(1) &&
                                            <div className='section sectionTitle '  ref={this.sectionTitle}>
@@ -1063,40 +1060,36 @@ export default class Start extends React.Component {
                                            </div>
                                        }
 
-                                       {
-                                           this.state.addSection.includes(12) &&
-                                           <div className='section sectionTeam pt-6' ref={this.sectionTeam}>
-                                               <div className='form-box mt-4'>
-                                                   <FormBoxHead title={'Team#'} menuAndArrow={true} />
-                                                   <div className='my-4'>
-                                                       <FormBoxTitle title={'محتوا'} />
-                                                       <FormBoxInput placeholder={'عنوان اصلی'}/>
-                                                   </div>
-                                                   <div className='my-4'>
-                                                       <div className='d-flex align-items-center' >
-                                                           <FormBoxTitle title={'اعضاء'} />
-                                                           <FormBoxSubTitle count={8}/>
-                                                       </div>
-                                                       <div>
-                                                           <AddMember />
-                                                           {this.generateMember(this.state.addMember)}
-                                                       </div>
-                                                       <div className='adding-box'>
-                                                           <Adding title={'عضو'} onClick={()=>this.addingClick('addMember')} />
-                                                       </div>
-                                                   </div>
-                                                   <div className='my-4'>
-                                                       <FormBoxFontSize box={'team'} />
-                                                   </div>
-                                               </div>
-                                               <ScrollUp />
-                                           </div>
-                                       }
-
+                       {
+                           this.state.addSection.includes(12) &&
+                           <div className='section sectionTeam pt-6' ref={this.sectionTeam}>
+                               <div className='form-box mt-4'>
+                                   <FormBoxHead title={'Team#'} menuAndArrow={true}/>
+                                   <div className='my-4'>
+                                       <FormBoxTitle title={'محتوا'}/>
+                                       <FormBoxInput placeholder={'عنوان اصلی'}/>
                                    </div>
-                               )
-                           })
+                                   <div className='my-4'>
+                                       <div className='d-flex align-items-center'>
+                                           <FormBoxTitle title={'اعضاء'}/>
+                                           <FormBoxSubTitle count={8}/>
+                                       </div>
+                                       <div>
+                                           <AddMember/>
+                                           {this.generateMember(this.state.addMember)}
+                                       </div>
+                                       <div className='adding-box'>
+                                           <Adding title={'عضو'} onClick={() => this.addingClick('addMember')}/>
+                                       </div>
+                                   </div>
+                                   <div className='my-4'>
+                                       <FormBoxFontSize box={'team'}/>
+                                   </div>
+                               </div>
+                               <ScrollUp/>
+                           </div>
                        }
+
 
 
                        {/* {
