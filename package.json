@@ -11,7 +11,7 @@
     "axios": "^0.19.2",
     "bootstrap": "^4.4.1",
     "formik": "^2.0.8",
-    "node-sass": "^4.13.0",
+    "node-sass": "^7.0.0",
     "num2persian": "^3.2.0",
     "primeicons": "^2.0.0",
     "primereact": "^4.0.0",
